@@ -49,9 +49,8 @@ public class UserController {
 		user us = new user();
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
-		if(username == null || password == null ) {
+		if(username == null|| password == null ) {
 		    return "login";
-
 		}else {
 			XCookie.add("username", username, 1, resp);
 			XCookie.add("password", password, 1, resp);
