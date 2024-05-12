@@ -1,0 +1,25 @@
+package lab2.bai11.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+@RequestMapping("param")
+public class ParamController {
+	@Autowired
+	HttpServletRequest req;
+	
+	@RequestMapping("form")
+	public String form() {
+		return "form";
+	}
+	
+	@RequestMapping("save/{x}")
+	public String save(/*?1*/String x,/*?2*/String y){
+		return "form";
+	}
+	
+}

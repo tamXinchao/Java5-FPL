@@ -1,0 +1,37 @@
+package lab2.bai11.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+public class okController {
+	
+	@Autowired
+	HttpServletRequest req;
+	@RequestMapping("/ok")
+	
+	public String OK() {
+		
+		return "ok";
+	}
+	@PostMapping("ok")
+	public String m1() {
+		req.setAttribute("message", "Goi ok()");
+		return "ok";
+	}
+	public String m2() {
+		return "ok";
+	}
+	
+	@RequestMapping(value = "ok", params = "x")
+	public String m3() {
+		req.setAttribute("message", "Goi m3()");
+		return "ok";
+	}
+	
+}

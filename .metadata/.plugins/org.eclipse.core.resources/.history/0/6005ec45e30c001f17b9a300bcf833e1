@@ -1,0 +1,9 @@
+package com.lab1.bai1.controller;
+
+public class user {
+	private String username;
+	private String password;
+	
+	
+	
+}

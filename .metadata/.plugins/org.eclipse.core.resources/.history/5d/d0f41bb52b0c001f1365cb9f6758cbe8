@@ -1,0 +1,19 @@
+package lab2.bai11.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("param")
+public class ParamController {
+	@RequestMapping("form")
+	public String form() {
+		return "form";
+	}
+	
+	@RequestMapping("save/{x}")
+	public String save(/*?1*/String x,/*?2*/String y){
+		return "form";
+	}
+	
+}

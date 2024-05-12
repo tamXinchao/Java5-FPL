@@ -1,0 +1,12 @@
+package Lab3.bean;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+
+
+public class Student {
+
+}

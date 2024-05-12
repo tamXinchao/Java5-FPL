@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FORM</title>
+</head>
+<body>
+	<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+	<form:form action="" modelAttribute="student">
+		<form:input path="name" />
+		<form:radiobutton path="gender" />
+		<form:select path="faculty">
+			<form:option value=""></form:option>
+		</form:select>
+	</form:form>
+</body>
+</html>

@@ -1,0 +1,3 @@
+spring.application.name=Lab1
+string.mvc.view.prefix=/WEB-INF/views/
+string.mvc.view.suffix=.jsp	
