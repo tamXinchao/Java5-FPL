@@ -1,7 +1,0 @@
-package Lab3.controller;
-
-@Controller
-
-public class StudentController {
-	
-}

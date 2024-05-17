@@ -21,7 +21,7 @@ public class ProductController {
 		return "form2";
 	}
 	
-	@PostMapping("save")
+	@PostMapping("/save")
 	public String save(@RequestParam("name") String name , @RequestParam("price") Double price) {
 		product pt = new product(name, price);
 		req.setAttribute("name", pt.getName());	
